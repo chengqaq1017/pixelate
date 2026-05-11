@@ -19,10 +19,10 @@ export default function ResultView({ original, result, pixelSize, colorDepth }: 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-dark-400" />
-            <span className="text-xs font-medium text-dark-300 uppercase tracking-widest">Original</span>
+            <span className="w-2 h-2 rounded-none bg-slate-400" />
+            <span className="text-xs font-medium text-slate-500 uppercase tracking-widest">Original</span>
           </div>
-          <div className="rounded-2xl overflow-hidden border border-dark-500 bg-dark-800">
+          <div className="rounded-none overflow-hidden border border-slate-200 bg-slate-100">
             <img
               src={original.src}
               alt="Original"
@@ -33,10 +33,10 @@ export default function ResultView({ original, result, pixelSize, colorDepth }: 
         </div>
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-accent" />
-            <span className="text-xs font-medium text-dark-300 uppercase tracking-widest">Pixel art</span>
+            <span className="w-2 h-2 rounded-none bg-accent" />
+            <span className="text-xs font-medium text-slate-500 uppercase tracking-widest">Pixel art</span>
           </div>
-          <div className="rounded-2xl overflow-hidden border border-dark-500 bg-dark-800">
+          <div className="rounded-none overflow-hidden border border-slate-200 bg-slate-100">
             <img
               src={result}
               alt="Pixelated result"
@@ -51,9 +51,9 @@ export default function ResultView({ original, result, pixelSize, colorDepth }: 
       <div className="flex justify-center">
         <button
           onClick={download}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-dark-900
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-none bg-slate-800 text-white
             font-medium text-sm transition-all duration-200
-            hover:bg-dark-100 hover:scale-[1.02] active:scale-[0.98]"
+            hover:bg-slate-700 hover:scale-[1.02] active:scale-[0.98]"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />

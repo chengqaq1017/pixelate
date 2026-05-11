@@ -10,8 +10,8 @@ export default function Controls({ pixelSize, onPixelSizeChange, colorDepth, onC
     <div className="flex flex-wrap justify-center gap-8 w-full max-w-xl mx-auto">
       <div className="flex-1 min-w-40">
         <div className="flex justify-between items-baseline mb-2">
-          <label className="text-sm font-medium text-dark-200">Pixel size</label>
-          <span className="text-sm text-dark-300 tabular-nums">{pixelSize}px</span>
+          <label className="text-sm font-medium text-slate-600">Pixel size</label>
+          <span className="text-sm text-slate-500 tabular-nums">{pixelSize}px</span>
         </div>
         <input
           type="range"
@@ -24,8 +24,8 @@ export default function Controls({ pixelSize, onPixelSizeChange, colorDepth, onC
       </div>
       <div className="flex-1 min-w-40">
         <div className="flex justify-between items-baseline mb-2">
-          <label className="text-sm font-medium text-dark-200">Color depth</label>
-          <span className="text-sm text-dark-300 tabular-nums">{colorDepth}</span>
+          <label className="text-sm font-medium text-slate-600">Color depth</label>
+          <span className="text-sm text-slate-500 tabular-nums">{colorDepth}</span>
         </div>
         <input
           type="range"

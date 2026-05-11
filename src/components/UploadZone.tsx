@@ -45,11 +45,11 @@ export default function UploadZone({ onImageLoad, hasImage }: Props) {
       onDragLeave={onDragLeave}
       onClick={() => inputRef.current?.click()}
       className={`
-        relative w-full max-w-xl mx-auto rounded-2xl border-2 border-dashed
+        relative w-full max-w-xl mx-auto rounded-none border-2 border-dashed
         transition-all duration-300 cursor-pointer select-none
         ${dragOver
           ? 'border-accent bg-accent-dim scale-[1.02]'
-          : 'border-dark-400 hover:border-dark-300 hover:bg-dark-800/60'
+          : 'border-slate-300 hover:border-slate-400 hover:bg-slate-100/80'
         }
         ${hasImage ? 'p-4' : 'p-16'}
       `}
@@ -66,19 +66,19 @@ export default function UploadZone({ onImageLoad, hasImage }: Props) {
       />
 
       {hasImage ? (
-        <p className="text-sm text-dark-200 text-center pointer-events-none">
+        <p className="text-sm text-slate-500 text-center pointer-events-none">
           Drop a new image or click to replace
         </p>
       ) : (
         <div className="flex flex-col items-center gap-4 pointer-events-none">
-          <div className="w-14 h-14 rounded-full bg-dark-700 flex items-center justify-center">
-            <svg className="w-6 h-6 text-dark-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="w-14 h-14 rounded-none bg-slate-200 flex items-center justify-center">
+            <svg className="w-6 h-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
             </svg>
           </div>
           <div className="text-center">
-            <p className="text-dark-100 font-medium">Drop your image here</p>
-            <p className="text-dark-300 text-sm mt-1">or click to browse — PNG, JPG, WebP</p>
+            <p className="text-slate-700 font-medium">Drop your image here</p>
+            <p className="text-slate-400 text-sm mt-1">or click to browse — PNG, JPG, WebP</p>
           </div>
         </div>
       )}
