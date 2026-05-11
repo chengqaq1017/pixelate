@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npm init *)",
+      "Bash(cp -r meme-pixel/* .)",
+      "Bash(cp -r meme-pixel/.* .)",
+      "Bash(rm -rf meme-pixel)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(sleep 3 && cat /c/Users/27828/AppData/Local/Temp/claude/d--Desktop-github---meme-making/64b1897b-8167-4f79-9cdc-65d8cf653787/tasks/byl352r7l.output)",
+      "Read(//c/Users/27828/AppData/Local/Temp/claude/d--Desktop-github---meme-making/64b1897b-8167-4f79-9cdc-65d8cf653787/tasks/**)"
+    ]
+  }
+}
